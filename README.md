@@ -7,7 +7,7 @@ A simple PHP library for Calendly API. The API's main documentation is available
 To install use composer:
 
 ```bash
-composer require spartiat/calendly-api
+composer require  slowprog/calendly-api
 ```
 
 ## Usage
