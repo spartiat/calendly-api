@@ -24,27 +24,27 @@ class CalendlyApi
     /**
      * @const string
      */
-    private const METHOD_GET = 'get';
+    protected const METHOD_GET = 'get';
 
     /**
      * @const string
      */
-    private const METHOD_POST = 'post';
+    protected const METHOD_POST = 'post';
 
     /**
      * @const string
      */
-    private const METHOD_DELETE = 'delete';
+    protected const METHOD_DELETE = 'delete';
 
     /**
      * @const string
      */
-    private const API_URL = 'https://calendly.com';
+    protected const API_URL = 'https://calendly.com';
 
     /**
      * @var Client
      */
-    private $client;
+    protected $client;
 
     /**
      * @param string      $apiKey
@@ -147,7 +147,7 @@ class CalendlyApi
      *
      * @throws CalendlyApiException
      */
-    private function callApi($method, $endpoint, array $params = [])
+    protected function callApi($method, $endpoint, array $params = [])
     {
         $url = sprintf('/api/v1/%s', $endpoint);
 
